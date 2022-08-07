@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script type = "module" src = ../../js/firebase-init.js></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feedback</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <a href="./index.html" class="logo-text">Think Travel</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="./localShopToGo.html">local shop to go</a></li>
+          <li><a href="./deals.html">deals</a></li>
+          <li><a href="./feedback.html">feedback</a></li>
+          <li><a href="./aboutUs.html">about us</a></li>
+          <li><a href="./ContactUs.html">contact us</a></li>
+        </ul>
+        <a class="user" href="login.html"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+      </nav>
+    </header>
+
+    <!-- This is a feedback -->
+    <section class="heroform">
+      <div class="container">
+          <div class="right-side">
+              <div class="topic-text">We'd love your feedback!</div>
+              <br>
+              <p>
+                  Leave your feedback about your experience in the local shop and website.
+              </p>
+              <form action="#">
+                  <div class="input-box">
+                      <input type="text" placeholder="username" id="name">
+                  </div>
+                  <div class="input-box message-box">
+                      <textarea placeholder="Tell us about your experience" id="feedback"></textarea>
+                  </div>
+                  <div class="input-box">
+                      <label for="exampleFormControlSelect1">How would you rate your overall experience? 
+                          (Rate on a scale of 1-5)</label>
+
+                      <select class="select" id="avaliation">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                  </div>
+
+                  <div class="button">
+                      <input type="button" value="Submit" onclick="sendFeedback()"/>
+              </form>
+              </div>
+          </div>
+  </section>
+    <!-- Think Travel website message -->
+    <section class="last-articles">
+        <div class="last-articles__title">
+            <div class="container">
+                <h2 class="text-article">We are happy you are here. Think Travel is an independent media company championing traveler lifestyle, and give the opportunity to show local shops close to you.</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-text">
+          <h2 class="footer__logo">
+            Think Travel
+          </h2>
+        </div>
+        <div class="footer-text">
+          <p>We are a multi-national team based in Dublin, Ireland who provide a simple, affordable way for find local shop when you are travel or walking on the street with an around-the-clock focus on comfort, convenience, and safety! Think Travel's
+              philosophy is to champion local shops and encourage people to fall in love with the locals brands and shops.
+          </p>
+        </div> 
+
+        <div class="footer-text">
+          <p>Think Travel is a local shop search where people can come to learn, discuss, admire and covet. Think Travel is our emporium of goodness. We travel far and wide to collect and select only the best local shops for you.</p>
+        </div>
+
+        <div class="footer-text">
+          <ul class="footer__links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+          </ul>
+        </div> 
+      </div>
+    </footer>
+
+    
+
+    <script src = "https://www.gstatic.com/firebasejs/9.9.1/firebase-app-compat.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth-compat.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore-compat.js"></script>
+    
+
+
+    <script src="../js/mobile-navbar.js"></script>
+    <script src="../js/feedback.js"></script>
+
+  </body>
+</html>

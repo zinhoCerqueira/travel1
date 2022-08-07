@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color:#242c2c;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo-text {
+  text-transform: uppercase;
+  background-color: #84A1A7;
+  font-size: 24px;
+  margin: 0;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 254, 254);
+  float: left;
+  text-align: right;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #e8e8e8;
+  height: 8vh;
+}
+
+main {
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.hero {
+  height: 80vh;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: left calc(50% + 20px) bottom no-repeat, left calc(50% - 20px) bottom no-repeat, url(../img/01.jpg);
+  background-size: 40px 40px, 40px 40px, cover;
+}
+
+.hero__text {
+  background-color: #242a2c;
+  margin: 5px 30px 35px;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.hero__btn {
+  border: 1px solid rgba(255, 255, 255, .3);
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  padding: 15px 25px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* All the webpages green part with phrases - Think Travel Phrase: We are happy you are here..."*/
+
+.last-articles__title {
+  background-color: #84A1A7;
+  padding: 5px 5px;
+}
+
+.last-articles__title h2 {
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+}
+
+img{
+  width: 427.17px; 
+  height: 546.36px;
+  object-fit: contain;
+}
+
+
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #84A1A7;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .image {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  img{
+    width: 175.17px; 
+    height: 250.36px;
+    object-fit: contain;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #e8e8e8;
+    height: 10vh;
+  }
+  .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #84A1A7;
+    margin-top: 45px;
+    margin-right: 20px;
+  }
+  .container .right-side {
+    width: 100%;
+    margin-right: 21px;
+    margin-top: 30px;
+  }
+  .container .right-side-2 {
+    width: 100%;
+    margin-right: 21px;
+    margin-top: 30px;
+    margin-block-end: 100px;
+  }
+
+  .text-signup{
+    display:none;
+  }
+  .text-signup-h1{
+    font-size: 18px;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/*Bottom menu --------------------------------------*/
+.hidden {
+  display: none;
+}
+
+.bottom-menu {
+  padding: 20px 0;
+}
+
+.bottom-menu iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-menu p {
+  color: #CCC;
+  padding-left: 10px;
+}
+
+.bottom-menu .sociais {
+  text-align: center;
+}
+
+.bottom-menu .sociais h1 {
+  display: none;
+}
+
+.bottom-menu .sociais ul {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-menu .sociais ul li a {
+  color:  #a3e7f8;
+  font-size: 1.5rem;
+}
+
+/* Footer is incluide in all webpages */
+
+.footer {
+  background-color: #2e3d41;
+  padding: 1px 0 20px;
+  color: #5f7e86;
+  font-size: 14px;
+}
+
+.footer-text {
+  text-align: center;
+  display: flex;
+  padding: 3% 1%;
+}
+
+.footer__links li {
+  list-style: none;
+}
+
+.footer__links a {
+  color: #5f7e86;
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Form for Webpages: contact us, feedback, Local shop to go and deals */
+
+.heroform {
+  height: 65vh;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: left calc(50% + 20px) bottom no-repeat, left calc(50% - 20px) bottom no-repeat, #eff3f4;
+  background-size: 40px 40px, 40px 40px, cover;
+}
+
+.topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #84A1A7;
+}
+
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+  padding: 3%;
+}
+
+.right-side p {
+  color: #84A1A7;
+  font-size: 15px;
+  word-spacing: 3px;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: #fbfcfc;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .message-box {
+  min-height: 110px;
+}
+
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.right-side .button input[type="button"] {
+  color: #eff3f4;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #84A1A7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button input[type="button"]:hover {
+  background: #84A1A7;
+}
+
+@media (max-width: 950px) {
+  .container {
+      width: 90%;
+      padding: 30px 40px 40px 35px;
+  }
+  .container .content .right-side {
+      width: 75%;
+      margin-left: 55px;
+      margin-right: 5px;
+  }
+}
+
+.container .content .right-side {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* webpage style about us and some style in contact us and feedback */
+
+.content {
+  background: #eff3f4;
+  padding: 20px 0 80px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.content h3 {
+  color: #737c85;
+  font-size: 30px;
+  padding-top: 40px;
+  font-weight: 400;
+}
+
+.content p {
+  color: #929da5;
+  font-size: 18px;
+  word-spacing: 3px;
+}
+
+.article {
+  width: 40vw;
+  margin: auto;
+  padding: 30px;
+}
+
+.container-contactUs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  margin-block-end: 150px;
+}
+
+/* Webpage: Sign Up/Sign In */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.signup {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: left calc(50% + 20px) bottom no-repeat, left calc(50% - 20px) bottom no-repeat, url(../img/01signup.jpg);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.body-sign {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.container-sign {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card-sign {
+    background-color: #ffffff80;
+    padding: 30px;
+    padding-bottom: 10px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 400px;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #586165;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 14px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    /*margin-top: 5%;*/
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #586165;
+}
+
+.label-float label {
+    color: #586165;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus+label,
+.label-float input:valid+label {
+    font-size: 12px;
+    margin-top: 0;
+    color: #586165
+}
+
+.button-sign {
+    background-color: transparent;
+    border-color: #586165;
+    color: #586165;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+a-sing {
+    color: #586165;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+button:hover {
+    background-color: #586165;
+    color: #fff;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #586165;
+}
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSuccess {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 6px;
+    color: #586165
+}
+
+.card p {
+    color: #586165;
+    font-size: 13px;
+    word-spacing: 3px;
+}

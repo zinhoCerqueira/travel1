@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<!-- This page was created by Luisa Nunes -->
+
+<head>
+    <!-- Page title -->
+    <title>signup</title>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS created by Luisa Nunes -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Js created by Luisa Nunes -->
+    <script src="../js/menu.js"></script>
+
+</head>
+
+<body>
+
+   
+    <!-- This Navs shows the webpages -->
+    <header>
+        <nav>
+          <a href="./index.html" class="logo-text">Think Travel</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="./localShopToGo.html">local shop to go</a></li>
+            <li><a href="./deals.html">deals</a></li>
+            <li><a href="./feedback.html">feedback</a></li>
+            <li><a href="./aboutUs.html">about us</a></li>
+            <li><a href="./ContactUs.html">contact us</a></li>
+          </ul>
+          <a class="user" href="login.html"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+        </nav>
+      </header>
+        <!-- This is user for sign up-->
+        <section class="signup">
+
+            <div class="container-sign">
+                <div class='card-sign'>
+                  
+                    <h1 class="text-signup-h1"> Become a Think Travel member</h1>
+                    <p class="text-signup">Create your Think Travel Member profile and get first access to the very best of Local shops, inspiration and community.</p>
+                  <form>
+                    <div class="label-float">
+                        <input type="text" id="name" placeholder=" ">
+                        <label id="labelName" for="name">Name or username</label>
+                    </div>
+
+                    <div class="label-float">
+                        <input type="text" id="email" placeholder=" " onchange="onChangeEmail()">
+                        <label id="email" for="email">E-mail</label>
+                    </div>
+
+                    <div class="label-float">
+                        <input type="password" id="password" placeholder=" " onchange="onChangePassword()">
+                        <label for="password">Password</label>
+                        <i id="lookPassword" class="fa fa-eye" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="label-float">
+                        <input type="password" id="confirmPassword" placeholder=" " onchange="onChangeConfirmPassword()">
+                        <label for="confirmPassword">Confirm password</label>
+                        <i id="lookConfirmPassword" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="justify-center">
+                        <button class="button-sign" id="register-button" value="signup" type="button" disabled="true" onclick="register()">Sign up</button>
+                    </div>
+                    <br>
+                    <p> Are you a Member?
+                        <a href='./login.html'> Sign in. </a>
+                    </p>
+                  </form>
+                </div>
+            </div>
+        </section>
+        <!-- Think Travel website message -->
+        <section class="last-articles"></section>
+        <div class="last-articles__title">
+            <div class="container">
+                <h2>We are happy you are here. Think Travel is an independent media company championing traveler lifestyle, and give the opportunity to show local shops close to you.</h2>
+            </div>
+        </div>
+        </section>
+        <!-- Footer with some information about Think Travel website -->
+        <footer class="footer">
+            <div class="container">
+              <div class="footer-text">
+                <h2 class="footer__logo">
+                  Think Travel
+                </h2>
+              </div>
+              <div class="footer-text">
+                <p>We are a multi-national team based in Dublin, Ireland who provide a simple, affordable way for find local shop when you are travel or walking on the street with an around-the-clock focus on comfort, convenience, and safety! Think Travel's
+                    philosophy is to champion local shops and encourage people to fall in love with the locals brands and shops.
+                </p>
+              </div> 
+      
+              <div class="footer-text">
+                <p>Think Travel is a local shop search where people can come to learn, discuss, admire and covet. Think Travel is our emporium of goodness. We travel far and wide to collect and select only the best local shops for you.</p>
+              </div>
+      
+              <div class="footer-text">
+                <ul class="footer__links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+              </div> 
+            </div>
+          </footer>
+      
+          
+          <script src = "https://www.gstatic.com/firebasejs/9.9.1/firebase-app-compat.js"></script>
+          <script src = "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth-compat.js"></script>
+          <script type = "module" src = ../../js/firebase-init.js></script>
+          
+          <script src="../js/signup.js"></script>
+          <script src="../js/mobile-navbar.js"></script>
+
+
+    </body>
+
+</html>

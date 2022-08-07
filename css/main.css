@@ -1,0 +1,484 @@
+/* Webpages style in general*/
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
+}
+
+.header {
+    background: #fff;
+    width: 100%;
+}
+
+.js .header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-text {
+    text-transform: uppercase;
+    background-color: #84A1A7;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    text-align: right;
+}
+
+.header__nav {
+    clear: left;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav li {
+    list-style-type: none;
+    background: #242c2c;
+    text-align: center;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+
+.header__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #586165;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    padding: 25px 0;
+    transition: .8s ease;
+}
+
+.header__nav a:hover {
+    color: #63c6ae;
+}
+
+.header__btnMenu {
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+.js .header__nav {
+    transition: max-height 1s;
+}
+
+header .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1.0rem;
+}
+
+
+/**/
+
+
+/* Webpage: Index (Home) */
+
+.hero {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: left calc(50% + 20px) bottom no-repeat, left calc(50% - 20px) bottom no-repeat, url(../img/01.jpg);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.hero__text {
+    background-color: #242a2c;
+    margin: 5px 30px 35px;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.hero__btn {
+    border: 1px solid rgba(255, 255, 255, .3);
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+/* webpage style about us and some style in contact us and feedback */
+
+.content {
+    background: #eff3f4;
+    padding: 20px 0 80px;
+    border-top: 1px solid #e3e3e3;
+}
+
+.content h3 {
+    color: #737c85;
+    font-size: 21px;
+    padding-top: 40px;
+    font-weight: 400;
+}
+
+.content p {
+    color: #929da5;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+
+
+/* All the webpages green part with phrases - Think Travel Phrase: We are happy you are here..."*/
+
+.last-articles__title {
+    background-color: #84A1A7;
+    padding: 5px 0;
+}
+
+.last-articles__title h2 {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* Webpage: Sign Up/Sign In */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.signup {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: left calc(50% + 20px) bottom no-repeat, left calc(50% - 20px) bottom no-repeat, url(../img/01signup.jpg);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #ffffff80;
+    padding: 30px;
+    padding-bottom: 10px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 400px;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #586165;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 14px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    /*margin-top: 5%;*/
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #586165;
+}
+
+.label-float label {
+    color: #586165;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus+label,
+.label-float input:valid+label {
+    font-size: 12px;
+    margin-top: 0;
+    color: #586165
+}
+
+button {
+    background-color: transparent;
+    border-color: #586165;
+    color: #586165;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+a {
+    color: #586165;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+button:hover {
+    background-color: #586165;
+    color: #fff;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #586165;
+}
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSuccess {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 6px;
+    color: #586165
+}
+
+.card p {
+    color: #586165;
+    font-size: 13px;
+    word-spacing: 3px;
+}
+
+
+/* Form for Webpages: contact us, feedback, Local shop to go and deals */
+
+.heroform {
+    height: 65vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: left calc(50% + 20px) bottom no-repeat, left calc(50% - 20px) bottom no-repeat, #eff3f4;
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #84A1A7;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side p {
+    color: #84A1A7;
+    font-size: 15px;
+    word-spacing: 3px;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #fbfcfc;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="button"] {
+    color: #eff3f4;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #84A1A7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="button"]:hover {
+    background: #84A1A7;
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+    .container .content .right-side {
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+.container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+}
+
+
+/* Footer is incluide in all webpages */
+
+.footer {
+    background-color: #2e3d41;
+    padding: 1px 0 20px;
+    color: #5f7e86;
+    font-size: 14px;
+}
+
+.footer__links li {
+    list-style: none;
+}
+
+.footer__links a {
+    color: #5f7e86;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        position: fixed;
+    }
+    .logo-text {
+        width: 25%;
+        box-sizing: border-box;
+    }
+    .header__btnMenu {
+        display: none;
+    }
+    .header__nav {
+        float: left;
+        width: 75%;
+        clear: none;
+        max-width: 800px;
+    }
+    .header__nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .header__nav li {
+        border-bottom: none;
+        flex-grow: 1;
+    }
+    .header__nav a {
+        background: white;
+    }
+    .content .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    .footer .container {
+        display: flex;
+    }
+    .footer .container>* {
+        margin: 1.5em;
+    }
+}
+
+
+
+/* Webpage Local shop to go and deals */
